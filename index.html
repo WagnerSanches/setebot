@@ -8,6 +8,149 @@
     <link rel="stylesheet" href="_css-Default.css">
     <link rel="stylesheet" href="_css-index.css">
 </head>
+<style>
+
+@font-face {
+    font-family: inicial;
+    src: url("../fonts/inicial.otf");
+}
+
+body {
+    padding: 0px;
+}
+
+#fd_img {
+    box-shadow: 2px 0px 10px 1px #1D252D;
+    height: 100vh;
+    width: 70%;
+    background-image: url("../images/fd_image4.jpg");
+    position: relative;
+    float: left;
+} 
+#fd_text{
+    margin-top: 30%;
+    margin-left: 150px;
+} #fd_text > h1{
+    font-family: inicial;
+    font-size: 75px;
+    padding: 0px 5px;
+    font-weight: 600;
+    color: #E06C42;
+    text-shadow:  1px 1px #fdfdf6;
+    display: inline-block;
+    /* background: #fdfdf6; */
+    /* box-shadow: 5px 5px 7px 1px #1D252D; */
+}
+
+#inicio {
+    width: 30%;
+    height: 100vh;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fdfdf6;
+}
+
+
+
+#cx_text {
+    padding-bottom: 30px;
+    text-align: center;
+    color: #1D252D;
+    font-size: 14px;;
+}
+
+#cx_inicio {
+    height: 120px;
+    font-size: 18px;
+} #cx_inicio > a:first-child {
+    border: 1px solid #E06C42;
+    padding: 5px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    background: #E06C42;
+    color: #fdfdf6;
+    outline: none;
+    box-sizing: border-box;
+} #cx_inicio > a:first-child:hover {
+    background-color: #E06C42;
+    color: #fdfdf6;
+    transition: .2s;
+}
+ #cx_inicio > a {
+    border: 1px solid #293F76;
+    padding: 5px 15px;
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #293F76;
+    outline: none;
+    box-sizing: border-box;
+} #cx_inicio > a:hover {
+    background-color: #293F76;
+    color: #fdfdf6;
+    transition: .2s;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    #fd_text > h1 {
+        font-size: 60px;
+        transition: .3s;
+    }
+    #fd_img {
+        width: 60%;
+        transition: .3s;
+    }
+    #inicio {
+        width: 40%;
+        background: #fdfdf6;
+        transition: .3s;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    #fd_text {
+        margin-left: 50px;
+        transition: .3s;
+    }
+
+}
+@media only screen and (max-width: 800px) {
+    body {
+        background-image: url("../images/fd_image4.jpg");
+        background-position: cover;
+    }
+    #inicio {
+        width: 100%;
+        display: block;
+        height: 75px;
+    }
+    #fd_img {
+        width: 100%;
+        padding: 70px 0px 0px;
+        box-sizing: border-box;
+        
+    }
+    #fd_text {
+        margin: 0px;
+        text-align: center;
+    } #fd_text > h1 {
+        transition: .3s;
+        font-size: 60px;
+    }
+    #cx_inicio {
+        text-align: right;
+        margin-top: 20px;
+    } 
+    #cx_text {
+        display: none;
+    }
+
+}
+
+
+</style>
 <body>  
         
     
