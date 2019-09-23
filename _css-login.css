@@ -1,0 +1,137 @@
+
+body {
+    padding: 0px;
+}
+#fd_img {
+    height: 100vh;
+    width: 40%;
+    background: url("../images/fd_image4.jpg");
+    background-size: cover;
+    float: left;
+    box-shadow: 0px 0px 7px 1px #1D252D;
+}
+
+#tl_login {
+    width: 55%;
+    height: 100vh;
+    float: right;
+    box-sizing: border-box;
+}
+
+#frm_login {
+    margin-top: 150px;
+    margin-left: 60px;
+    width: 60%;
+    box-sizing: border-box;
+} #frm_login > p{
+    font-size: 16px;
+    color: #1D252D;
+} #frm_login > p input {
+    font-size: 15px;
+    width: 70%;
+    padding: 5px;
+    border: 0px;
+    box-shadow: 0px 0px 4px .1px #1D252D;
+    margin: 5px 0px 30px;
+    display: block;
+    outline: none;
+}
+
+#div_load {
+    height: 40px;
+    padding-top: 15px;
+    position: relative;
+    text-align: left;
+} #div_load > img {
+    width: 10%;
+    right: 20px;
+    top: 10px;
+    display: none;
+    position: absolute;
+} #div_load > button {
+    border: 0px;
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    background: #E06C42;
+    float: right;
+    color: #fdfdf6;
+    outline: none;
+} #div_load > p {
+    padding: 10px;
+    display: inline-block;
+    font-size: 16px;
+
+} #div_load > p a {
+    color: #293F76;
+    font-size: 16px;
+}
+
+#link_cadastro {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    color: #1D252D;
+    
+} #link_cadastro > a {
+    color: #293F76;
+} 
+
+
+#erroAutenticar {
+    color: rgb(211, 20, 20);
+    padding: 0px 15px;
+    font-weight: 100;
+    display: none;
+}
+
+
+@media only screen and (max-width: 1200px) { 
+    #frm_login {
+        width: 80%;
+        margin-left: 40px;
+    }
+    #frm_login > p input {
+        width: 90%;
+        transition: .4s;
+    }
+    #div_load > p {
+        padding: 0px;
+        transition: .4s;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        background: url("../images/fd_image4.jpg");
+    }
+    #frm_login {
+        background: #fdfdf6;
+        padding: 50px;
+        box-sizing: unset;      
+        margin: 0px;
+        max-height: 300px;
+    }
+    #tl_login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+    }
+    #fd_img {
+        display: none;
+    }
+
+    #frm_login > p input {
+        max-width: 500px;
+    }
+    #div_load {
+        max-width: 500px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #tl_login, #frm_login {
+        max-width: 500px;
+    }
+}
