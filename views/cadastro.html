@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="../css/_css-Default.css">
+    <link rel="stylesheet" href="../css/_css-cadastro.css">
+</head>
+
+<body>
+    
+    <div id="fd_img"></div>
+
+    <div id="tl_cad">
+
+        <form action="../cadastrarUsuario" id="frm_cad" method="post">
+            <div id="cabecalho_form">
+                <h1>CADASTRO</h1>
+            </div>
+            
+            <p>Nome completo
+                <input type="text" name="nome">
+
+            </p>
+            <p>Email
+                <input type="email" name="email">
+
+            </p>
+            
+            <p>Senha
+                <input type="password" name="senha">
+            </p>
+
+            <div id="btn_cadastro"><button>Finalizar</button></div>
+        </form>
+
+    </div>
+
+</body>
+<script>
+
+// var frm = document.querySelector("#frm_cad");
+// var btn = document.querySelector("#btn_cadastro button");
+// btn.addEventListener("click", function(e) {
+// 	e.preventDefault();
+// 	frm.action = "";
+// 	frm.method = "POST";
+// 	frm.submit();
+// })
+
+</script>
+</html>

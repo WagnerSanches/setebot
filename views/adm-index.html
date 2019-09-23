@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/_css-admin.css">
+</head>
+<!-- <script src="../js/_js-autenticar.js"></script> -->
+<body>
+    <div id="cabecalho">
+        <a href="../index.html">sair</a>
+    </div>
+    <div id="dv_tabela">
+        <table id="tabela">
+            <tr>
+                <th>ID</th>
+                <th>NOME</th>
+                <th>EMAIL</th>
+                <th>DATA NASCIMENTO</th>
+                <th>DELETAR</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Wagner Aguiar Sanches Garcia Sobrinho</td>
+                <td>WagnerSanches5@hotmail.com</td>
+                <td>12/05/5245</td>
+                <td><a href="javascript:void" id="excluir"><i class="fa fa-close"></i></a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="fundo">
+        <form action="excluirAluno" method="post" id="frm_exc">
+            <h1>Excluir aluno ?</h1>
+            <input type="text" name="id" id="id" readonly>
+            <input type="text" id="nome" readonly>
+            <input type="text" id="email" readonly>
+            <button>Sim</button>
+        </form>
+    </div>
+</body>
+<script src="../js/_js-adm.js"></script>
+</html>

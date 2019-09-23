@@ -1,0 +1,62 @@
+#tela_password {
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(29, 37, 45, 0.178);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: none;
+} #tela_password > form {
+    width: 600px;
+    height: 450px;
+    padding: 130px 60px 0px;
+    box-shadow: 0px 0px 10px 1px #1D252D;
+    box-sizing: border-box;    
+    background-color: #fdfdf6;
+    position: relative;
+} #tela_password > form p {
+    font-size: 16px;
+    color: #1D252D;
+} #tela_password > form input {
+    font-size: 15px;
+    width: 100%;
+    padding: 5px;
+    border: 0px;
+    box-shadow: 0px 0px 4px .1px #1D252D;
+    margin: 30px 0px;
+    display: block;
+    outline: none;
+} #tela_password > form button {
+    border: 0px;
+    padding: 5px 15px;
+    margin-top: 60px;
+    font-size: 15px;
+    cursor: pointer;
+    background: #E06C42;
+    float: right;
+    color: #fdfdf6;
+    outline: none;
+} #tela_password > form img {
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#confirmacao {
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 0px 0px 4px .1px rgb(50, 128, 50);
+    background: rgb(50, 128, 50);
+    width: 30%;
+    padding: 15px;
+    font-size: 18px;
+    color: #fdfdf6;
+    position: fixed;
+    display: none;
+}
+.erro {
+    box-shadow: 0px 0px 4px 1px rgb(209, 6, 6)!important;
+}

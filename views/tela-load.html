@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<script>
+var url = window.location.search.replace("?", "");
+
+if(url == "") {
+    window.location.href = "principal.html"
+}
+
+</script>
+
+<style>
+    body {
+        display: flex;
+        height: 90vh;
+        background: #fdfdf6;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    
+    <img src="../images/tela_load2.gif" alt="">
+
+</body>
+<script>
+
+function enviar() {
+    var url = window.location.search.replace("?", "");
+
+    if(url == "exercicios") {
+        window.location.href = "exercicios.html"
+    }
+    if(url == "material") {
+        window.location.href = "material.html"
+    }
+    window.history.pushState("object or string", "Title", "/new-url");
+}
+
+
+window.onload = setTimeout(enviar, 1500);
+
+</script>
+</html>

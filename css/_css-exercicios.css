@@ -1,0 +1,81 @@
+
+#tl_exercicios {
+    padding: 10px;
+    margin-top: 40px;
+}
+#opcoes_exercicios {
+    width: 60%;
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    border-bottom: 5px solid #2a4ca8;
+}
+
+#opcoes_exercicios > div {
+    display: inline-block;
+    box-sizing: border-box;
+    user-select: none;
+    cursor: pointer;
+    color: #2a4ca8;
+}
+#opcoes_exercicios > div p {
+    padding: 10px 20px;
+}
+
+
+.opcoes_exercicios_ativada {
+    background: #2a4ca8;
+}
+.opcoes_exercicios_ativada > p {
+    color: #F6F4EA!important;
+}
+#cx_exercicios {
+    margin: 0px;
+}
+
+.subOpcao > p {
+    width: 60%;
+    box-sizing: border-box;
+    padding: 10px 25px;
+    margin: 10px auto;
+    background: #5576D1;
+    border: 1px solid #5576D1;
+    color: #F6F4EA;
+
+}
+.subOpcao > p:hover {
+    color: #F6F4EA;
+    background: #2a4ca8;
+    cursor: pointer;
+    border: 1px solid #2a4ca8;
+}
+.subOpcao > div {
+    width: 60%;
+    margin: 0px auto;
+    text-indent: 30px;
+}
+.subOpcao > div p{
+    padding-bottom: 40px;
+}
+
+.cx_exercicios_class {
+    display: none;
+}
+.cx_exercicios_class_aparecer {
+    display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+    .subOpcao > p {
+        width: 100%;
+    }
+    .subOpcao > div {
+        width: 100%;
+        margin: 0px auto;
+        text-align: justify;
+        text-indent: 30px;
+    }
+    #opcoes_exercicios {
+        width: 100%;
+    }
+}

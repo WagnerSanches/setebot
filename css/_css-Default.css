@@ -1,0 +1,15 @@
+@font-face {
+    font-family: principal;
+    src: url("../fonts/principal2.ttf");
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: principal;
+    font-weight: 100;
+}
+body {
+    background: #fdfdf6;
+    padding: 10px 70px;
+}

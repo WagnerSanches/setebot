@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+
+    <!-- LINKS CSS -->
+    <link rel="stylesheet" href="../css/_css-Default.css">
+    <link rel="stylesheet" href="../css/_css-login.css">
+    <link rel="stylesheet" href="../css/tela_esqueci_senha.css">
+</head>
+<body>
+    
+    <div id="fd_img"></div>
+
+    <div id="tl_login">
+        <!-- FORMULARIO -->
+        <form id="frm_login">
+
+            <p>Email
+                <input type="text" name="email" id="email">
+            </p>
+
+            <p>Senha
+                <input type="password" name="senha" id="senha">
+            </p>
+
+            <div id="erroAutenticar"><p>Email ou senha invalidos!</p></div>
+
+            <!-- EFEITO GIF -->
+            <div id="div_load">
+                <p><a id="esqueci_senha" href="#">Esqueci a senha</a></p>
+                <button id="btn_login">Entrar</button>
+                <img id="load" src="../images/eclipse_load.gif">
+            </div>
+ 
+            <p id="link_cadastro">que tal <a href="cadastro.html">criar uma conta</a>?</p>
+
+        </form>
+
+    </div>
+
+    <div id="tela_password">
+
+        <form action="" method="post">
+            <img src="../images/icon_close.png">
+            <p>Digite o seu email:</p>
+
+            <input type="email" name="emailEsqueciSenha" required>
+            
+            <p>Sua senha sera mandada para o seu email.</p>
+            
+            <button>Enviar</button>
+        </form>
+
+    </div>
+
+    <div id="confirmacao">
+        <p>A senha foi enviada para o Email!</p>
+    </div>
+
+</body>
+<!-- SCRIPT PAGINA LOGIN -->
+<script src="../js/_js-login.js"></script>
+
+</html>

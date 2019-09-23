@@ -1,0 +1,110 @@
+body {
+    padding: 0px;
+}
+#fd_img {
+    width: 40%;
+    height: 100vh;
+    box-shadow: 0px 0px 7px 1px #1D252D;
+    background-image: url("../images/fd_image4.jpg");
+    background-size: cover;
+    position: relative;
+    float: left;
+}
+
+#tl_cad {
+    width: 60%;
+    float: right;
+}
+#frm_cad {
+    margin: 0px auto;
+    max-width: 350px;
+    margin-top: 80px;
+} 
+#cabecalho_form {
+    border-bottom: 2px solid rgba(29, 37, 45, 0.6);
+    text-align: center;
+    padding: 15px 0px 5px;
+    font-size: 12px;
+} 
+
+#frm_cad > p{
+    font-size: 16px;
+    color: #1D252D;
+    width: 90%;
+    margin: 30px auto 0px;
+} #frm_cad > p:first-child input {
+    width: 80%;
+} #frm_cad > p input {
+    font-size: 15px;
+    width: 100%;
+    padding: 5px;
+    border: 0px;
+    box-shadow: 0px 0px 4px .1px rgb(29, 37, 45);
+    margin: 0px auto 10px;
+    display: block;
+    outline: none;
+} 
+
+#btn_cadastro {
+    height: 40px;
+    padding-top: 15px;
+}
+#btn_cadastro > button {
+    border: 0px;
+    padding: 5px 15px;
+    margin: 20px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    background: #E06C42;
+    float: right;
+    color: #fdfdf6;
+    outline: none;
+}
+
+
+
+@media only screen and (max-width: 750px) { 
+    #fd_img {
+        display: none;
+    }
+    #frm_cad {
+        background: #F6F4EA;
+        padding: 10px 15px 30px;
+        margin-top: 50px;
+        width: 80%;
+        height: 400px;
+    }
+    #frm_cad > input {
+        width: 100%!important;
+        margin: 0px auto 20px;
+        padding: 1vmax;
+        box-sizing: border-box;
+        display: block;
+    }
+    #btn_cadastro {
+        text-align: center;
+    }
+    #btn_cadastro > button{
+        display: block;
+        width: 80%;
+        margin: 0px auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        float: none;
+    } 
+    body {
+        background-image: url("../images/fd_image4.jpg");
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        height: 100vh;
+    }
+    
+    #tl_cad  {
+        width: 100%;
+        height: 100%;
+        transition: .5s;
+    }
+
+}
